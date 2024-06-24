@@ -37,7 +37,6 @@ jobs:
           -e GITHUB_BASE_REF="${{github.base_ref}}" \
           -e GITHUB_REF="${{github.ref}}" \
           -e GITHUB_SHA="${{github.sha}}" \
-          -e WORKSPACE_PATH="/src" \
           -e LOG_LEVEL="debug" \
+          -e WORKSPACE_PATH="/src" \
           -v "${{ github.workspace }}":/src  "${{env.docker_tag}}"
-has context menu
